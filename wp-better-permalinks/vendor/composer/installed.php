@@ -1,24 +1,23 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'name' => 'gbiorczyk/wp-better-permalinks',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '8dd83617740b6c93bf7b95473e23a9cb85a88730',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
     ),
-    'reference' => 'b76c14e4aab81865fccee352619cc5f1625c3198',
-    'name' => 'gbiorczyk/wp-better-permalinks',
-  ),
-  'versions' => 
-  array (
-    'gbiorczyk/wp-better-permalinks' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b76c14e4aab81865fccee352619cc5f1625c3198',
+    'versions' => array(
+        'gbiorczyk/wp-better-permalinks' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '8dd83617740b6c93bf7b95473e23a9cb85a88730',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
-  ),
 );

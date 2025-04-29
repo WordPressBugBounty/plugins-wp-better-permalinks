@@ -1,0 +1,106 @@
+.wbpContent {
+  font-family: $f-main;
+  padding: 20px 30px;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  p,
+  ul li {
+    max-width: 800px;
+    font-size: 14px;
+    line-height: 1.64;
+  }
+
+  ul {
+    padding-left: 10px;
+
+    li {
+      position: relative;
+      padding-left: 14px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        margin-top: -1px;
+        border-radius: 50%;
+        background-color: $c-blue-01;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  a {
+    color: $c-blue-01;
+    text-decoration: underline;
+    box-shadow: none;
+    outline: none;
+    transition: opacity $tr;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  p,
+  ul {
+    margin: 10px 0 0 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+
+    & + p,
+    & + ul {
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.67;
+    }
+  }
+
+  &--notice {
+
+    h1, h2, h3, h4, h5, h6 {
+
+      & + p {
+        font-size: 14px;
+        line-height: 1.64;
+      }
+    }
+  }
+
+  &--lastCenter {
+
+    & > p:last-child {
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    margin-top: -10px;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  &__button {
+    float: left;
+    margin: 20px 20px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -3,9 +3,9 @@ Contributors: mateuszgbiorczyk
 Donate link: https://ko-fi.com/gbiorczyk/?utm_source=wp-better-permalinks&utm_medium=readme-donate
 Tags: friendly permalinks, permalinks structure, taxonomy term permalinks, custom post type permalinks, permalinks tree
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 4.1.1
+Stable tag: 4.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,8 +33,8 @@ The plugin allows you to set your own structure with a few clicks. Everything wo
 == Installation ==
 
 1. Upload the plugin files to `/wp-content/plugins/wp-better-permalinks` directory, or install plugin through the WordPress plugins screen directly.
-2. Activate plugin through the `Plugins` screen in WordPress Admin Panel.
-3. Use the `Settings -> WP Better Permalinks` screen to configure the plugin.
+2. Activate plugin through `Plugins` screen in WordPress Admin Panel.
+3. Use `Settings -> WP Better Permalinks` screen to configure the plugin.
 
 == Frequently Asked Questions ==
 
@@ -92,6 +92,10 @@ This is all very important to us and allows us to do even better things for you!
 1. Screenshot of the options panel
 
 == Changelog ==
+
+= 4.2.0 (2025-04-29) =
+* `[Security]` Update of Axios HTTP client
+* `[Added]` Support for WordPress 6.8
 
 = 4.1.1 (2021-05-22) =
 * `[Fixed]` Closing notice in admin panel
