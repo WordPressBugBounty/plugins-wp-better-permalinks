@@ -3,9 +3,9 @@ Contributors: mateuszgbiorczyk
 Donate link: https://ko-fi.com/gbiorczyk/?utm_source=wp-better-permalinks&utm_medium=readme-donate
 Tags: friendly permalinks, permalinks structure, taxonomy term permalinks, custom post type permalinks, permalinks tree
 Requires at least: 5.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.0
-Stable tag: 4.2.0
+Stable tag: 4.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,6 +92,10 @@ This is all very important to us and allows us to do even better things for you!
 1. Screenshot of the options panel
 
 == Changelog ==
+
+= 4.2.1 (2025-12-08) =
+* `[Added]` Support for WordPress 6.9
+* `[Added]` The home page of the plugin
 
 = 4.2.0 (2025-04-29) =
 * `[Security]` Update of Axios HTTP client
