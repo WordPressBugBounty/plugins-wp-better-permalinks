@@ -29,7 +29,7 @@
     private function getTermIdForPost($postId, $taxonomy)
     {
       $terms = get_the_terms($postId, $taxonomy);
-      if (!$terms) return 0;
+      if (!$terms || is_wp_error($terms)) return 0;
 
       $rewrites = apply_filters('wbp_rewrites', []);
       foreach ($terms as $term) {

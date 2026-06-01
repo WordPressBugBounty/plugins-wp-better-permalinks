@@ -27,8 +27,9 @@
 
     private function generatePostLink($original, $post, $leavename, $rewrite)
     {
-      $postPath  = trim(parse_url($original, PHP_URL_PATH), '/');
-      $postParts = explode('/', $postPath);
+      $pathComponent = parse_url($original, PHP_URL_PATH);
+      $postPath      = trim($pathComponent ? (string)$pathComponent : '', '/');
+      $postParts     = explode('/', $postPath);
 
       $termParts = $this->getTermsParts($rewrite['regex'], $postPath);
       $slugIndex = count($postParts) - 1;

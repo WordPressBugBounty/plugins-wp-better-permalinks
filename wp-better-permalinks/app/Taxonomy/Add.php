@@ -18,7 +18,9 @@
 
     public function addRewriteRule($termId)
     {
-      $term    = get_term_by('id', $termId, $this->taxonomy);
+      $term = get_term_by('id', $termId, $this->taxonomy);
+      if (!$term || is_wp_error($term)) return;
+
       $url     = apply_filters('wbp_term_link', '', $term, $this->taxonomy);
       $path    = $this->getTermPath($url, $term);
       $rewrite = 'index.php?' . $term->taxonomy . '=' . $term->slug;
@@ -32,9 +34,10 @@
       $postType = get_post_type_object($this->postType);
       $taxonomy = get_taxonomy($this->taxonomy);
 
-      $path  = '/' . trim(parse_url($url, PHP_URL_PATH), '/') . '/';
-      $path  = str_replace($taxonomy->rewrite['slug'], $postType->rewrite['slug'], $path);
-      $parts = explode('/', trim($path, '/'));
+      $pathComponent = parse_url($url, PHP_URL_PATH);
+      $path          = '/' . trim($pathComponent ? (string)$pathComponent : '', '/') . '/';
+      $path          = str_replace($taxonomy->rewrite['slug'], $postType->rewrite['slug'], $path);
+      $parts         = explode('/', trim($path, '/'));
       return implode('/', $parts);
     }
   }

@@ -19,14 +19,16 @@
       $rewrites = apply_filters('wbp_rewrites', []);
       if (!isset($rewrites[$term->term_id])) return $original;
 
-      $path = trim(parse_url($original, PHP_URL_PATH), '/');
+      $pathComponent = parse_url($original, PHP_URL_PATH);
+      $path          = trim($pathComponent ? (string)$pathComponent : '', '/');
       return str_replace($path, $rewrites[$term->term_id]['regex'], $original);
     }
 
     public function getTermLink($value, $termId, $taxonomy)
     {
       remove_filter('term_link', [$this, 'replaceLink'], 100, 3);
-      return get_term_link($termId, $taxonomy);
+      $link = get_term_link($termId, $taxonomy);
       add_filter('term_link', [$this, 'replaceLink'], 100, 3);
+      return $link;
     }
   }

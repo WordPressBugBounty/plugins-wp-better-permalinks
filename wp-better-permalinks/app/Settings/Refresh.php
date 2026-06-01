@@ -57,7 +57,7 @@
         'fields'     => 'ids',
         'lang'       => [],
       ]);
-      return $list;
+      return (is_wp_error($list)) ? [] : $list;;
     }
 
     private function updateTermsForTaxonomy($termIds, $taxonomy, $postType)
