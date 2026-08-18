@@ -3,9 +3,9 @@ Contributors: mateuszgbiorczyk
 Donate link: https://ko-fi.com/gbiorczyk/?utm_source=wp-better-permalinks&utm_medium=readme-donate
 Tags: friendly permalinks, permalinks structure, taxonomy term permalinks, custom post type permalinks, permalinks tree
 Requires at least: 5.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.3.0
+Stable tag: 4.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,6 +92,9 @@ This is all very important to us and allows us to do even better things for you!
 1. Screenshot of the options panel
 
 == Changelog ==
+
+= 4.3.1 (2026-08-18) =
+* `[Added]` Support for WordPress 7.1
 
 = 4.3.0 (2026-06-01) =
 * `[Changed]` Minimum required PHP version from 7.0 to 7.4

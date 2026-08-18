@@ -4,13 +4,13 @@
     Plugin Name: WP Better Permalinks
     Plugin URI: https://mattplugins.com
     Description: Set custom friendly permalinks structure: Custom Post Type > Taxonomy > Post and Custom Post Type > Taxonomy instead of default WordPress structure.
-    Version: 4.3.0
+    Version: 4.3.1
     Author: Mateusz Gbiorczyk
     Author URI: https://gbiorczyk.pl/
     Text Domain: wp-better-permalinks
   */
 
-  define('WBP_VERSION', '4.3.0');
+  define('WBP_VERSION', '4.3.1');
   define('WBP_FILE',    __FILE__);
   define('WBP_NAME',    plugin_basename(__FILE__));
   define('WBP_PATH',    plugin_dir_path(__FILE__));

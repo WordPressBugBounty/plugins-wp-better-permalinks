@@ -3,7 +3,7 @@
         'name' => 'gbiorczyk/wp-better-permalinks',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '46338f87b66d9ddf43d608cb999a36232b00899b',
+        'reference' => '8a45ea064fbc5912bc05100d5634697c1f6ff1b3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'gbiorczyk/wp-better-permalinks' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '46338f87b66d9ddf43d608cb999a36232b00899b',
+            'reference' => '8a45ea064fbc5912bc05100d5634697c1f6ff1b3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
